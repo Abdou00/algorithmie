@@ -1,15 +1,5 @@
 function retourneLaPhrase(str) {
-  var a = str.split('');
-  console.log(a);
-
-  var b = a.reverse()
-  console.log(b);
-
-  var c = b.join('');
-  console.log(c);
-
-  return c;
-  // return str.split('').reverse().join('');
+  
 }
 
 console.log(retourneLaPhrase("Bonjour à tous !!"));

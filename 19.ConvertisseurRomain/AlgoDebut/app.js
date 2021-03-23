@@ -1,12 +1,11 @@
 var convertisseurRomain = function(num) {
 
     var valeurDecimale = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
-    var chiffreRomains = 
-    [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+    var chiffreRomains = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
 
 
 }
-      
+
 console.log(convertisseurRomain(36));
 
 // 36 = XXXVI

@@ -1,9 +1,5 @@
 function conversion(degCel) {
-  if (typeof(degCel) === 'number') {
-    return (degCel * (9/5) + 32);
-  }
-
-  return 'Données  en entrée non  correctes !';
+  
 }
 
 console.log(conversion(50));
