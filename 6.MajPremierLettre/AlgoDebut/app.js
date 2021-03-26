@@ -1,6 +1,9 @@
 function maj(str) {
+    let strArr = str.split(' ');
 
-  
+    return strArr.map(ele => {
+        return ele.charAt(0).toUpperCase() + ele.slice(1)
+    }).join(' ');
 }
 
 console.log(maj("Les sanglots longs des violons de l'automne..."));

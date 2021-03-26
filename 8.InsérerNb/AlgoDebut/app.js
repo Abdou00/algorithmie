@@ -1,5 +1,6 @@
 function insere(arr, num) {
-
+    arr.push(num);
+    return arr.sort((a, b) => a - b);
 }
 
 console.log(insere([30,45,87,96,54,29], 60));

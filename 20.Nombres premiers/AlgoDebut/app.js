@@ -1,8 +1,23 @@
 function additioneNbPremiers(num) {
-
-
+    let out = 0;
+    let isFirstNumber = false;
+    for (let i = 2; i <= num; i++) {
+        if(i % 1 == 0 && i % i == 0){
+            for (let y = 2; y < i; y++) {
+                if(i == y) continue;
+                if(i % y != 0){
+                    isFirstNumber = true;
+                }else {
+                    isFirstNumber = false;
+                    break;
+                }
+            }
+        }
+        if(isFirstNumber) out += i;
+    }
+    return out + 2;
 }
-console.log(additioneNbPremiers(10));
+console.log(additioneNbPremiers(0));
 
 // additioneNbPremiers(10) = 17;
 

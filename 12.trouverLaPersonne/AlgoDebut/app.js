@@ -1,6 +1,9 @@
 function trouverLaPersonne(data, source) {
-
-
+  let out = [];
+  for (const obj of data) {
+    if (obj.hasOwnProperty("nom") && obj.nom === source.nom) out.push(obj)
+  }
+  return out;
 }
 
 console.log(

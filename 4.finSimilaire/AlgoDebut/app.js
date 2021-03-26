@@ -1,8 +1,12 @@
 function finSimilaire(str, fin) {
-  
+  let match = str.slice(-fin.length);
+
+  if (match == fin) return console.log("La fin est similaire");
+  return console.log("La fin ne correspond pas");
 }
 
 console.log(finSimilaire("ours", "rs"));
+console.log(finSimilaire("ours", "eeers"));
 
 // ----------------- ÉNONCÉ -----------------
 

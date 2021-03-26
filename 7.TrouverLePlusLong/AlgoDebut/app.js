@@ -1,6 +1,10 @@
 function trouverLongueurMax(str){
+    let biggest = "";
+    for (const word of str.split(" ")) {
+        if(word.length > biggest.length) biggest = word;
+    }
 
-
+    return biggest;
 }
 
 

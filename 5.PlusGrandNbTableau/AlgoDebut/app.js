@@ -1,5 +1,15 @@
 function plusGrandNb(arr) {
+  let out = [];
 
+  for (const arrY of arr) {
+    let highest = 0;
+    for (const nb of arrY) {
+      if(nb > highest) highest = nb;
+    }
+    out.push(highest);
+  }
+
+  return out;
 }
 
 

@@ -1,6 +1,5 @@
 function aplatisCeTableau(arr) {
-
-
+    return arr.flat(99999);
 }
   
 console.log(aplatisCeTableau([1, {}, [3, [[4]]]] ));

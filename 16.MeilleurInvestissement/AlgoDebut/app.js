@@ -1,6 +1,12 @@
 function meilleurInvestissement(arr){
-
-
+    const days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+    
+    let out = [0, Number.MAX_VALUE];
+    arr.forEach((e) => {
+        if(e > out[0]) out[0] = e;
+        if(e < out[1]) out[1] = e;
+    });
+    return `Le meilleur jour pour investir est ${days[arr.indexOf(out[0])]} \nLe meilleur jour pour vendre est ${days[arr.indexOf(out[1])]}`;
 }
 
 console.log(meilleurInvestissement([50,10,20,2,80,60,20]));

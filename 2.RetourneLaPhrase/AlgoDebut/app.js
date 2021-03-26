@@ -1,5 +1,5 @@
 function retourneLaPhrase(str) {
-  
+    return [...str].reverse().join("");
 }
 
 console.log(retourneLaPhrase("Bonjour à tous !!"));

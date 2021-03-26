@@ -1,9 +1,7 @@
 function repete(str, num) {
-
-
-  
+    return num-- > 0 ? str + ' ' + repete(str, num) : '';
 }
-console.log(repete('abc', 4));
+console.log(repete('abc', 5));
 
 // ----------------- ÉNONCÉ -----------------
 

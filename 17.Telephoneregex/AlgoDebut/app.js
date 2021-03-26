@@ -1,12 +1,10 @@
 function telephoneCheck(str){
-    
-    var reg = //;
-
-    return reg.test(str);
-
+    if(!/(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/.test(str)) return `${str} n'est pas un bon numero de tel français :(`;
+    return `${str} est un bon numero de tel français :(`;;
 }
 
 console.log(telephoneCheck("06 44 64 90 21"));
+console.log(telephoneCheck("06 44fefe 64 90 21"));
 
 
 // ----------------- ÉNONCÉ -----------------

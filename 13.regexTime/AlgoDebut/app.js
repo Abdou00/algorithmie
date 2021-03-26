@@ -1,5 +1,6 @@
 function regexTime(str) {
 
+    return str.replace(/\//gm, "").replace(/\%/gm, "").replace(/\d/gm, "");
 }
 
 

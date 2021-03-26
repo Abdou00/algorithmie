@@ -1,5 +1,7 @@
 function conversion(degCel) {
-  
+  if (typeof(degCel) != "number") return console.warn(`Erreur "${degCel}" n'est pas un nombre`);
+
+  return (degCel * (9/5) + 32);
 }
 
 console.log(conversion(50));

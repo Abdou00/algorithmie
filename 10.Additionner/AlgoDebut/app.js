@@ -1,9 +1,11 @@
 function additionner(arr) {
-
-
+    let out = 0;
+    for (let i = arr[0]; i < arr[1]; i++)
+        out += i;
+    return out;
 }
 
-console.log(additionner([4, 10000000]));
+console.log(additionner([1, 50]));
 // 1+2+3+4 = 10
 
 // ----------------- ÉNONCÉ -----------------

@@ -1,7 +1,11 @@
 function memeLettres(arr) {
-
+    for (const letter of arr[1]) {
+        if(!arr[0].includes(letter)) return "Ne contient pas toutes les lettres de " + arr[1];
+    }
+    return "Contient toutes les lettres du mot " + arr[1];
 }
 console.log(memeLettres(["concupiscence", "sens"]));
+console.log(memeLettres(["concupiscence", "sensy"]));
 
 
 

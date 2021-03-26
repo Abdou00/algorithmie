@@ -1,5 +1,9 @@
 function difTab(arr1, arr2) {
-
+    let out = [];
+    for (const i of arr2) {
+        if(!arr1.includes(i)) out.push(i)
+    }
+    return out;
 }
 
 console.log(difTab([1, 2, 3, 5], [1, 2, 3, 4, 5]));
